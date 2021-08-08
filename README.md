@@ -4,13 +4,13 @@
 
 ## Table of Contents:
 
-- [Description](#description:)
-- [Installation Instructions](#installation_instructions:)
-- [Usage Information](#usage_information:)
-- [Contribution Guidelines](#contribution_guidelines:)
-- [Test Instructions](#test_instructions:)
-- [Questions](#questions:)
-- [License Information](#license_information:)
+- [Description](#description)
+- [Installation Instructions](#installation)
+- [Usage Information](#usage)
+- [Contribution Guidelines](#contribution)
+- [Test Instructions](#test)
+- [Questions](#questions)
+- [License Information](#license)
 
 ## Description:
 
