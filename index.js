@@ -52,6 +52,16 @@ const promptUser = () => {
             type: 'input',
             name: 'year',
             message: 'Enter year in YYYY format for license information',
+        },
+        {
+            type: 'input',
+            name: 'github',
+            message: 'Enter your GitHub username'
+        },
+        {
+            type: 'input',
+            name: 'email',
+            message: 'Enter your email address'
         }
     ]);
 };
@@ -101,7 +111,15 @@ ${answers.contribution}
 
 ${answers.test}
 
-## License
+## Questions:
+
+Where to reach out if there are any questions:
+
+[GitHub Profile](https://github.com/${answers.github})
+
+[Email](mailto:${answers.email})
+
+## License Information:
 
 ${generateLicense(answers)}`
 
