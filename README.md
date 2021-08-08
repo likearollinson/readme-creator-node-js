@@ -10,7 +10,7 @@
 - [Contribution Guidelines](#contribution_guidelines)
 - [Test Instructions](#test_instructions)
 - [Questions](#questions)
-- [License Information](#license information)
+- [License Information](#license-information)
 
 ## Description:
 
