@@ -1,0 +1,22 @@
+{
+  "name": "unc-hw-9-readme-creator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/likearollinson/unc-hw-9-readme-creator.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/likearollinson/unc-hw-9-readme-creator/issues"
+  },
+  "homepage": "https://github.com/likearollinson/unc-hw-9-readme-creator#readme",
+  "dependencies": {
+    "inquirer": "^8.1.2"
+  }
+}
