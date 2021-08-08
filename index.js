@@ -1,10 +1,14 @@
+
+//allows necessary modules to be imported
 const inquirer = require('inquirer');
 const fs = require('fs');
 const util = require('util');
 
+// create writeFile function using promises instead of a callback function
 const writeFileAsync = util.promisify(fs.writeFile);
 
 
+//uses inquirer prompt to get information from the user that will be used to create the README
 const promptUser = () => {
     return inquirer.prompt([
         {
@@ -66,6 +70,7 @@ const promptUser = () => {
     ]);
 };
 
+//generates badges for the README based on the input from the user in the prompt
 const generateBadge = (answers) => {
     if (answers.license === 'MIT') {
         return '[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)';
@@ -76,6 +81,8 @@ const generateBadge = (answers) => {
     }
 }
 
+
+//generates license information for the README based on the input from the user in the prompt
 const generateLicense = (answers) => {
     if (answers.license === 'MIT') {
         return `MIT License\n\nCopyright (c) ${answers.year} ${answers.name}\n\nPermission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.IN NO EVENT SHALL THE AUTHORS OR COPYRIGT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.`
@@ -86,6 +93,7 @@ const generateLicense = (answers) => {
     }
 }
 
+//generates the content for the README file that will be created
 const generateREADME = (answers) =>
     `# ${answers.title}
 
@@ -133,6 +141,7 @@ Where to reach out if there are any questions:
 
 ${generateLicense(answers)}`
 
+//writes the README file based on the information from the user and the content set up in the generateREADME function
 const init = () => {
     promptUser()
         .then((answers) => writeFileAsync('README.md', generateREADME(answers)))
@@ -140,4 +149,5 @@ const init = () => {
         .catch((err) => console.error(err));
 }
 
+//runs the initialization function
 init();
