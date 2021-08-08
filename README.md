@@ -5,12 +5,12 @@
 ## Table of Contents:
 
 - [Description](#description)
-- [Installation Instructions](#installation_instructions)
-- [Usage Information](#usage_information)
-- [Contribution Guidelines](#contribution_guidelines)
-- [Test Instructions](#test_instructions)
+- [Installation Instructions](#installation-instructions)
+- [Usage Information](#usage-information)
+- [Contribution Guidelines](#contribution-guidelines)
+- [Test Instructions](#test-instructions)
 - [Questions](#questions)
-- [License Information](#license_information)
+- [License Information](#license-information)
 
 ## Description:
 
