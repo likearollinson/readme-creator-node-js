@@ -99,19 +99,18 @@ const generateREADME = (answers) =>
 
 ${generateBadge(answers)}
 
+## Description:
+
+${answers.description}
+
 ## Table of Contents:
 
-- [Description](#description)
 - [Installation Instructions](#installation-instructions)
 - [Usage Information](#usage-information)
 - [Contribution Guidelines](#contribution-guidelines)
 - [Test Instructions](#test-instructions)
 - [Questions](#questions)
 - [License Information](#license-information)
-
-## Description:
-
-${answers.description}
 
 ## Installation Instructions:
 
