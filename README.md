@@ -1,53 +1,42 @@
-# README creator
+# README Creator
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+## A README creator that uses node and the inquirer npm
 
-## Table of Contents:
+## Table of Contents
 
-- [Description](#description)
-- [Installation Instructions](#installation-instructions)
-- [Usage Information](#usage-information)
-- [Contribution Guidelines](#contribution-guidelines)
-- [Test Instructions](#test-instructions)
-- [Questions](#questions)
-- [License Information](#license-information)
+- [Motivation and Technologies](#motivation)
+- [Functionality](#functionality)
+- [Challenges](#challenges)
+- [Usage](#usage)
 
-## Description:
+## Motivation
 
-description
+The goal of this project is to showcase the power of inquirer npm and create a full README file using the prompts filled in by the user in the terminal.
 
-## Installation Instructions:
+#### Technologies
 
-install
+- Javascript
+- node.js
+- Inquirer NPM
 
-## Usage Information:
+## Functionality
 
-usage
+![prompts-demo](./images/prompts.png)
+![readme-demo](./images/readme.png)
 
-## Contribution Guidelines:
+#### The screenshot shows the input a user would put into the terminal and the README file created
 
-contribution
+- The user will be prompted to answer questions in teh terminal that will be used to fill in the README file.
+- The README is created with the information from the prompts.
 
-## Test Instructions:
+## Challenges
 
-test
+The major challenges faced when creating this application was how to implement the license badge into the README file. I was stuck for awhile trying to figure out how to input something that came from a function into the README, but once that was figured out it was pretty much smooth sailing from there.
 
-## Questions:
+## Usage
 
-Where to reach out if there are any questions:
+- Being able to quickly and efficiently create a README that follows a specific format.
 
-[GitHub Profile](https://github.com/likearollinson)
+## Future Development
 
-[Email](mailto:brad.w.rollinson@gmail.com)
-
-## License Information:
-
-MIT License
-
-Copyright (c) 2021 Brad Rollinson
-
-Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.IN NO EVENT SHALL THE AUTHORS OR COPYRIGT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+- Recreate the prompts to match closer to the format of this README file so that I can use it in the future.
