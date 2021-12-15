@@ -1,6 +1,6 @@
 # README Creator
 
-## A README creator that uses node and the inquirer npm
+## A README creator that uses node and the Inquirer package
 
 ## Table of Contents
 
@@ -11,13 +11,13 @@
 
 ## Motivation
 
-The goal of this project is to showcase the power of inquirer npm and create a full README file using the prompts filled in by the user in the terminal.
+The goal of this project is to showcase the power of Inquirer npm package and create a full README file using the prompts filled in by the user in the terminal.
 
 #### Technologies
 
 - Javascript
 - node.js
-- Inquirer NPM
+- Inquirer NPM Package
 
 ## Functionality
 
